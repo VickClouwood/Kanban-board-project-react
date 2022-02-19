@@ -20,6 +20,8 @@
 }
 
 .app_nav {
+  display: flex;
+  justify-content: space-between;
   padding: 30px;
   box-shadow: 0 1px 20px rgba(56, 40, 40, 0.05);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -61,4 +63,14 @@
   background-color: #fff;
   border-radius: 10px;
   padding: 10px;
+}
+
+.nav-links-login {
+  border: 1px solid gray;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: rgb(94, 161, 233);
+  color: white;
 }

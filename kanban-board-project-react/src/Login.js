@@ -1,5 +1,6 @@
 import React from "react";
 import GoogleLogin from "react-google-login";
+import { Link } from "react-router-dom";
 import "./Login.css";
 
 function Login() {
@@ -13,6 +14,9 @@ function Login() {
   return (
     <>
       <header className="App-header">
+        <Link className="nav-links-todo" to="/kanban">
+          Kanban
+        </Link>
         <h1 className="heading">Tasks Desktop</h1>
         <h3 className="sub-heading">Please login to continue</h3>
         <div>

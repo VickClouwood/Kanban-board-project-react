@@ -33,8 +33,9 @@
   box-shadow: 0 2px 4px 0 rgba(251, 252, 252, 0.2);
 }
 
-.nav-links-login,
 .nav-links-todo {
+  display: flex;
+  flex-wrap: wrap;
   border: 1px solid black;
   padding: 5px 10px;
   border-radius: 5px;
@@ -44,9 +45,8 @@
   color: white;
 }
 
-.nav-links-login:hover,
 .nav-links-todo:hover {
-  background-color: rgb(15, 79, 148);
+  background-color: rgb(71, 144, 221);
   color: white;
 }
 

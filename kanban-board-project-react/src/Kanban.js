@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import Board from "./components/Board/Board";
 import "./Kanban.css";
@@ -122,6 +123,9 @@ function Kanban() {
     <div className="app">
       <div className="app_nav">
         <h1>Kanban Board</h1>
+        <Link className="nav-links-login" to="/login">
+          Login
+        </Link>
       </div>
       <div className="app_boards_container">
         <div className="app_boards">
