@@ -1,22 +1,21 @@
 import React from "react";
 import GoogleLogin from "react-google-login";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
 
 function Login() {
+  const navigate = useNavigate();
   const handleFailure = (result) => {
     alert(result);
   };
 
   const handleLogin = (googleData) => {
     console.log(googleData);
+    navigate("/Kanban");
   };
   return (
     <>
       <header className="App-header">
-        <Link className="nav-links-todo" to="/kanban">
-          Kanban
-        </Link>
         <h1 className="heading">Tasks Desktop</h1>
         <h3 className="sub-heading">Please login to continue</h3>
         <div>
